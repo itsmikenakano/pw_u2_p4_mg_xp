@@ -29,20 +29,19 @@ const app = Vue.createApp({
             console.log(event.charCode)
             if (event.charCode == '13') {
                 console.log('Presiono Enter')
-                const nuevoEstudiante={
-                    nombre:'Nuevo',
-                    apellido:'Nuevo Apellido'
+                const nuevoEstudiante = {
+                    nombre: 'Nuevo',
+                    apellido: 'Nuevo Apellido'
                 }
                 this.miarreglo.unshift(nuevoEstudiante)
             } else {
                 console.log('No es enter')
             }
         },
-        agregarEstudiante2(){
+        agregarEstudiante2() {
             console.log('Vamos a agregar')
-            const nuevoEstudiante={
-                nombre:this.nombre,
-                apellido:'Nuevo Apellido'
+            const nuevoEstudiante = {
+                nombre: this.nombre,
             }
             this.miarreglo.unshift(nuevoEstudiante)
         }
